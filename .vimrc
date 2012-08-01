@@ -41,10 +41,15 @@ Bundle 'Shougo/neocomplcache'
 Bundle 'Shougo/vimshell'
 Bundle 'Shougo/vimproc'
 Bundle 'Markdown'
-Bundle 'flazz/vim-colorschemes'
+" Bundle 'flazz/vim-colorschemes'
 Bundle 'hallettj/jslint.vim'
 Bundle 'Tagbar'
 Bundle 'scrooloose/nerdcommenter'
+Bundle 'scrooloose/nerdtree'
+Bundle 'djjcast/mirodark'
+Bundle 'vcscommand.vim'
+" Bundle 'DrawIt'
+Bundle 'smarty.vim'
 
  filetype plugin indent on     " required!
  "
@@ -57,7 +62,7 @@ Bundle 'scrooloose/nerdcommenter'
  " see :h vundle for more details or wiki for FAQ
  " NOTE: comments after Bundle command are not allowed..
 
- let g:indent_guides_enable_on_vim_startup = 1
+ let g:indent_guides_enable_on_vim_startup = 0
 
  " Disable AutoComplPop.
 let g:acp_enableAtStartup = 0
@@ -70,4 +75,5 @@ let g:neocomplcache_enable_camel_case_completion = 1
 " Use underbar completion.
 let g:neocomplcache_enable_underbar_completion = 1
 
-colorscheme brookstream
+" colorscheme brookstream
+colorscheme mirodark
