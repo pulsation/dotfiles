@@ -50,6 +50,7 @@ Bundle 'djjcast/mirodark'
 Bundle 'vcscommand.vim'
 " Bundle 'DrawIt'
 Bundle 'smarty.vim'
+Bundle 'joonty/vim-xdebug.git'
 
  filetype plugin indent on     " required!
  "
