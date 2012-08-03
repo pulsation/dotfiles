@@ -51,6 +51,9 @@ Bundle 'vcscommand.vim'
 " Bundle 'DrawIt'
 Bundle 'smarty.vim'
 Bundle 'joonty/vim-xdebug.git'
+Bundle 'vexxor/phpdoc.vim'
+Bundle 'phpcs.vim'
+" Bundle 'ManPageView'
 
  filetype plugin indent on     " required!
  "
@@ -78,3 +81,4 @@ let g:neocomplcache_enable_underbar_completion = 1
 
 " colorscheme brookstream
 colorscheme mirodark
+
