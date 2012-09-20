@@ -55,6 +55,10 @@ Bundle 'joonty/vim-xdebug.git'
 Bundle 'vexxor/phpdoc.vim'
 Bundle 'phpcs.vim'
 Bundle 'DirDiff.vim'
+Bundle 'fholgado/minibufexpl.vim'
+Bundle 'Zenburn'
+Bundle "tpope/vim-surround.git"
+
 " Bundle 'ManPageView'
 " Bundle 'Conque-Shell'
 
@@ -81,7 +85,10 @@ let g:neocomplcache_enable_smart_case = 1
 let g:neocomplcache_enable_camel_case_completion = 1
 " Use underbar completion.
 let g:neocomplcache_enable_underbar_completion = 1
+" AutoComplPop like behavior.
+let g:neocomplcache_enable_auto_select = 1
 
 " colorscheme brookstream
 colorscheme mirodark
+" colorscheme zenburn
 
