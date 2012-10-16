@@ -9,7 +9,7 @@ if has('gui_running')
     set guioptions-=T   " Get rid of toolbar "
 	set nu
 	set nowrap
-    set guifont=liberationmono
+    set guifont=Menlo\ Regular:h14
 endif
 set ai sw=4
 set autochdir
@@ -33,7 +33,9 @@ call vundle#rc()
 " required! 
 Bundle 'gmarik/vundle'
 
-"
+" Installed plugins
+Bundle 'DirDiff.vim'
+
 Bundle 'tpope/vim-fugitive'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'mutewinter/vim-indent-guides'
@@ -55,7 +57,6 @@ Bundle 'smarty.vim'
 Bundle 'joonty/vim-xdebug.git'
 Bundle 'vexxor/phpdoc.vim'
 Bundle 'phpcs.vim'
-Bundle 'DirDiff.vim'
 Bundle 'fholgado/minibufexpl.vim'
 Bundle 'Zenburn'
 Bundle "tpope/vim-surround.git"
@@ -74,9 +75,9 @@ Bundle "tpope/vim-surround.git"
  " see :h vundle for more details or wiki for FAQ
  " NOTE: comments after Bundle command are not allowed..
 
- let g:indent_guides_enable_on_vim_startup = 0
+let g:indent_guides_enable_on_vim_startup = 0
 
- " Disable AutoComplPop.
+" Disable AutoComplPop.
 let g:acp_enableAtStartup = 0
 " Use neocomplcache.
 let g:neocomplcache_enable_at_startup = 1
