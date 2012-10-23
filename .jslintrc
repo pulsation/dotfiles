@@ -1,2 +1,6 @@
 /*jslint nomen: true */
-/*global enyo, onyx, require */
+/*jslint browser: true */
+/*jslint nomen: true */
+/*global enyo, onyx, dojo, dijit, dojox, define, require, console, gapi, google, $, Backbone, navigator */
+/* vim: set ft=javascript: */
+
