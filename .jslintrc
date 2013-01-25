@@ -1,6 +1,9 @@
 /*jslint nomen: true */
 /*jslint browser: true */
 /*jslint nomen: true */
-/*global enyo, onyx, dojo, dijit, dojox, define, require, console, gapi, google, $, Backbone, navigator */
+/*jslint sloppy: true */
+/*jslint es5: true */
+/*jslint plusplus: true */
+/*global enyo, onyx, dojo, dijit, dojox, define, require, console, gapi, google, $, _, Backbone, navigator, Lawnchair, describe, it, expect, runs, waitsFor */
 /* vim: set ft=javascript: */
 
