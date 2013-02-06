@@ -8,7 +8,7 @@ let g:netrw_liststyle=3
 if has('gui_running')
 
     " Get rid of toolbar
-    set guioptions-=T 
+    "    set guioptions-=T 
     
     " Display line numbers
 	set nu
@@ -57,10 +57,10 @@ Bundle 'Lokaltog/vim-easymotion'
 Bundle 'mutewinter/vim-indent-guides'
 Bundle 'pangloss/vim-javascript'
 Bundle 'Shougo/neocomplcache'
-Bundle 'Markdown'
 Bundle 'plasticboy/vim-markdown'
-Bundle "wookiehangover/jshint.vim"
-Bundle 'Tagbar'
+Bundle "matthias-guenther/hammer.vim"
+Bundle 'sleistner/vim-jshint'
+Bundle 'int3/vim-taglist-plus'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
 Bundle 'djjcast/mirodark'
@@ -86,6 +86,9 @@ Bundle "groenewege/vim-less"
 " Bundle 'Shougo/vimshell'
 " Bundle 'Shougo/vimproc'
 " Bundle 'JavaScript-Indent'
+" Bundle 'wookiehangover/jshint.vim'
+" Bundle 'Markdown'
+" Bundle 'suan/vim-instant-markdown'
 
  filetype plugin indent on     " required!
  "
@@ -114,7 +117,9 @@ let g:neocomplcache_enable_underbar_completion = 1
 let g:neocomplcache_enable_auto_select = 1
 
 " Shortcut for Tagbar
-nmap <F8> :TagbarToggle<CR> 
+nmap <F8> :TlistToggle<CR> 
+
+let g:HAMMER_BROWSER='firefox'
 
 " colorscheme brookstream
 colorscheme mirodark
