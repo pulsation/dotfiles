@@ -6,25 +6,41 @@ set guioptions+=b
 let g:netrw_liststyle=3
 
 if has('gui_running')
-    set guioptions-=T   " Get rid of toolbar "
+
+    " Get rid of toolbar
+    set guioptions-=T 
+    
+    " Display line numbers
 	set nu
+
+    " Do not wrap lines
 	set nowrap
-    set guifont=Menlo\ Regular:h14
+
+    set guifont=liberationmono
+
 endif
+
+" Auto indent
 set ai sw=4
+
+" Auto set directory to the last open file's path
 set autochdir
 
+" Convert tabulations to spaces
 set expandtab
-set tabstop=4
-set shiftwidth=4
-syn on
-nmap <F8> :TagbarToggle<CR> 
 
-filetype plugin indent on
+" How many columns a tab counts for
+set tabstop=4
+
+" How many columns text is indented with the reindent operations
+set shiftwidth=4
+
+" Syntax highlighting
+syn on
 
 " vundle
 set nocompatible               " be iMproved
- filetype off                   " required!
+filetype off                   " required!
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -33,36 +49,43 @@ call vundle#rc()
 " required! 
 Bundle 'gmarik/vundle'
 
-" Installed plugins
-Bundle 'DirDiff.vim'
-
+"
+" Activated bundles
+"
 Bundle 'tpope/vim-fugitive'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'mutewinter/vim-indent-guides'
-" Bundle 'JavaScript-Indent'
 Bundle 'pangloss/vim-javascript'
 Bundle 'Shougo/neocomplcache'
-" Bundle 'Shougo/vimshell'
-" Bundle 'Shougo/vimproc'
 Bundle 'Markdown'
-" Bundle 'flazz/vim-colorschemes'
-Bundle 'hallettj/jslint.vim'
+Bundle 'plasticboy/vim-markdown'
+Bundle "wookiehangover/jshint.vim"
 Bundle 'Tagbar'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
 Bundle 'djjcast/mirodark'
-Bundle 'vcscommand.vim'
-" Bundle 'DrawIt'
-Bundle 'smarty.vim'
-Bundle 'joonty/vim-xdebug.git'
-Bundle 'vexxor/phpdoc.vim'
-Bundle 'phpcs.vim'
-Bundle 'fholgado/minibufexpl.vim'
 Bundle 'Zenburn'
 Bundle "tpope/vim-surround.git"
-
+Bundle "greyblake/vim-preview.git"
+Bundle "groenewege/vim-less"
+"
+" Deactivated bundles
+"
 " Bundle 'ManPageView'
 " Bundle 'Conque-Shell'
+" Bundle 'vcscommand.vim'
+" Bundle 'DrawIt'
+" Bundle 'smarty.vim'
+" Bundle 'joonty/vim-xdebug.git'
+" Bundle 'vexxor/phpdoc.vim'
+" Bundle 'phpcs.vim'
+" Bundle 'DirDiff.vim'
+" Bundle 'fholgado/minibufexpl.vim'
+" Bundle 'flazz/vim-colorschemes'
+" Bundle 'hallettj/jslint.vim'
+" Bundle 'Shougo/vimshell'
+" Bundle 'Shougo/vimproc'
+" Bundle 'JavaScript-Indent'
 
  filetype plugin indent on     " required!
  "
@@ -77,7 +100,7 @@ Bundle "tpope/vim-surround.git"
 
 let g:indent_guides_enable_on_vim_startup = 0
 
-" Disable AutoComplPop.
+ " Disable AutoComplPop.
 let g:acp_enableAtStartup = 0
 " Use neocomplcache.
 let g:neocomplcache_enable_at_startup = 1
@@ -89,6 +112,9 @@ let g:neocomplcache_enable_camel_case_completion = 1
 let g:neocomplcache_enable_underbar_completion = 1
 " AutoComplPop like behavior.
 let g:neocomplcache_enable_auto_select = 1
+
+" Shortcut for Tagbar
+nmap <F8> :TagbarToggle<CR> 
 
 " colorscheme brookstream
 colorscheme mirodark
