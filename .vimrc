@@ -59,7 +59,7 @@ Bundle 'pangloss/vim-javascript'
 Bundle 'Shougo/neocomplcache'
 Bundle 'plasticboy/vim-markdown'
 Bundle "matthias-guenther/hammer.vim"
-Bundle 'sleistner/vim-jshint'
+Bundle 'wookiehangover/jshint.vim'
 Bundle 'int3/vim-taglist-plus'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
@@ -68,6 +68,7 @@ Bundle 'Zenburn'
 Bundle "tpope/vim-surround.git"
 Bundle "greyblake/vim-preview.git"
 Bundle "groenewege/vim-less"
+Bundle 'flazz/vim-colorschemes'
 "
 " Deactivated bundles
 "
@@ -81,14 +82,13 @@ Bundle "groenewege/vim-less"
 " Bundle 'phpcs.vim'
 " Bundle 'DirDiff.vim'
 " Bundle 'fholgado/minibufexpl.vim'
-" Bundle 'flazz/vim-colorschemes'
 " Bundle 'hallettj/jslint.vim'
 " Bundle 'Shougo/vimshell'
 " Bundle 'Shougo/vimproc'
 " Bundle 'JavaScript-Indent'
-" Bundle 'wookiehangover/jshint.vim'
 " Bundle 'Markdown'
 " Bundle 'suan/vim-instant-markdown'
+" Bundle 'sleistner/vim-jshint'
 
  filetype plugin indent on     " required!
  "
@@ -123,5 +123,6 @@ let g:HAMMER_BROWSER='firefox'
 
 " colorscheme brookstream
 colorscheme mirodark
+" colorscheme darkbone
 " colorscheme zenburn
 
