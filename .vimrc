@@ -57,7 +57,8 @@ Bundle 'Lokaltog/vim-easymotion'
 Bundle 'mutewinter/vim-indent-guides'
 Bundle 'pangloss/vim-javascript'
 Bundle 'Shougo/neocomplcache'
-Bundle 'plasticboy/vim-markdown'
+" Bundle 'plasticboy/vim-markdown'
+Bundle "tpope/vim-markdown"
 Bundle "matthias-guenther/hammer.vim"
 Bundle 'wookiehangover/jshint.vim'
 Bundle 'int3/vim-taglist-plus'
@@ -65,6 +66,7 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
 Bundle 'djjcast/mirodark'
 Bundle 'Zenburn'
+Bundle 'sickill/vim-sunburst'
 Bundle "tpope/vim-surround.git"
 Bundle "greyblake/vim-preview.git"
 Bundle "groenewege/vim-less"
@@ -122,7 +124,8 @@ nmap <F8> :TlistToggle<CR>
 let g:HAMMER_BROWSER='firefox'
 
 " colorscheme brookstream
-colorscheme mirodark
+" colorscheme mirodark
 " colorscheme darkbone
 " colorscheme zenburn
+colorscheme Sunburst
 
