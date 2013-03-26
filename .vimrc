@@ -1,4 +1,4 @@
-set ts=4
+set ts=2
 set background=dark
 "highlight Normal     guifg=gray guibg=#000033
 highlight Normal     guifg=gray guibg=#000011
@@ -21,7 +21,7 @@ if has('gui_running')
 endif
 
 " Auto indent
-set ai sw=4
+set ai sw=2
 
 " Auto set directory to the last open file's path
 set autochdir
@@ -30,10 +30,10 @@ set autochdir
 set expandtab
 
 " How many columns a tab counts for
-set tabstop=4
+set tabstop=2
 
 " How many columns text is indented with the reindent operations
-set shiftwidth=4
+set shiftwidth=2
 
 " Syntax highlighting
 syn on
@@ -129,3 +129,8 @@ let g:HAMMER_BROWSER='firefox'
 " colorscheme zenburn
 colorscheme Sunburst
 
+" indent guides
+let g:indent_guides_start_level=2
+let g:indent_guides_guide_size=1
+let g:indent_guides_enable_on_vim_startup=1 "enable on startup
+" set list
