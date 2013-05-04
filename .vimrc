@@ -1,14 +1,17 @@
 set ts=4
 set background=dark
 "highlight Normal     guifg=gray guibg=#000033
-highlight Normal     guifg=gray guibg=#000011
+"highlight Normal     guifg=gray guibg=#000011
+set ruler
+set incsearch
 set guioptions+=b
 let g:netrw_liststyle=3
+runtime ftplugin/man.vim
 
 if has('gui_running')
 
     " Get rid of toolbar
-    "    set guioptions-=T 
+    set guioptions+=T 
     
     " Display line numbers
 	set nu
@@ -16,12 +19,12 @@ if has('gui_running')
     " Do not wrap lines
 	set nowrap
 
-    set guifont=liberationmono
+  set gfn=Menlo\ Regular\:h18
 
 endif
 
 " Auto indent
-set ai sw=4
+set ai sw=2
 
 " Auto set directory to the last open file's path
 set autochdir
@@ -30,10 +33,10 @@ set autochdir
 set expandtab
 
 " How many columns a tab counts for
-set tabstop=4
+set tabstop=2
 
 " How many columns text is indented with the reindent operations
-set shiftwidth=4
+set shiftwidth=2
 
 " Syntax highlighting
 syn on
@@ -57,8 +60,8 @@ Bundle 'Lokaltog/vim-easymotion'
 Bundle 'mutewinter/vim-indent-guides'
 Bundle 'pangloss/vim-javascript'
 Bundle 'Shougo/neocomplcache'
-" Bundle 'plasticboy/vim-markdown'
-Bundle "tpope/vim-markdown"
+Bundle 'pulsation/vim-markdown'
+" Bundle "tpope/vim-markdown"
 Bundle "matthias-guenther/hammer.vim"
 Bundle 'wookiehangover/jshint.vim'
 Bundle 'int3/vim-taglist-plus'
@@ -117,6 +120,9 @@ let g:neocomplcache_enable_camel_case_completion = 1
 let g:neocomplcache_enable_underbar_completion = 1
 " AutoComplPop like behavior.
 let g:neocomplcache_enable_auto_select = 1
+
+" Disable markdown folding
+let g:vim_markdown_folding_disabled=1 
 
 " Shortcut for Tagbar
 nmap <F8> :TlistToggle<CR> 
