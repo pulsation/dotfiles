@@ -71,6 +71,7 @@ Bundle "tpope/vim-surround.git"
 Bundle "greyblake/vim-preview.git"
 Bundle "groenewege/vim-less"
 Bundle 'flazz/vim-colorschemes'
+Bundle 'mattn/zencoding-vim'
 "
 " Deactivated bundles
 "
@@ -116,7 +117,7 @@ let g:neocomplcache_enable_camel_case_completion = 1
 " Use underbar completion.
 let g:neocomplcache_enable_underbar_completion = 1
 " AutoComplPop like behavior.
-let g:neocomplcache_enable_auto_select = 1
+let g:neocomplcache_enable_auto_select = 0
 
 " Shortcut for Tagbar
 nmap <F8> :TlistToggle<CR> 
