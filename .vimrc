@@ -130,7 +130,8 @@ let g:HAMMER_BROWSER='firefox'
 " colorscheme mirodark
 " colorscheme darkbone
 " colorscheme zenburn
-colorscheme Sunburst
+" colorscheme Sunburst
+colorscheme molokai
 
 " indent guides
 let g:indent_guides_start_level=2
