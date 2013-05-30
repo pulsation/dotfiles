@@ -57,7 +57,6 @@ Bundle 'Lokaltog/vim-easymotion'
 Bundle 'mutewinter/vim-indent-guides'
 Bundle 'pangloss/vim-javascript'
 Bundle 'Shougo/neocomplcache'
-" Bundle 'plasticboy/vim-markdown'
 Bundle "tpope/vim-markdown"
 Bundle "matthias-guenther/hammer.vim"
 Bundle 'wookiehangover/jshint.vim'
@@ -72,6 +71,8 @@ Bundle "greyblake/vim-preview.git"
 Bundle "groenewege/vim-less"
 Bundle 'flazz/vim-colorschemes'
 Bundle 'mattn/zencoding-vim'
+Bundle 'loremipsum'
+
 "
 " Deactivated bundles
 "
@@ -91,6 +92,7 @@ Bundle 'mattn/zencoding-vim'
 " Bundle 'JavaScript-Indent'
 " Bundle 'Markdown'
 " Bundle 'suan/vim-instant-markdown'
+" Bundle 'plasticboy/vim-markdown'
 " Bundle 'sleistner/vim-jshint'
 
  filetype plugin indent on     " required!
