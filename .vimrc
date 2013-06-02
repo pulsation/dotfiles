@@ -1,4 +1,4 @@
-set ts=4
+set ts=2
 set background=dark
 "highlight Normal     guifg=gray guibg=#000033
 "highlight Normal     guifg=gray guibg=#000011
@@ -60,7 +60,7 @@ Bundle 'Lokaltog/vim-easymotion'
 Bundle 'mutewinter/vim-indent-guides'
 Bundle 'pangloss/vim-javascript'
 Bundle 'Shougo/neocomplcache'
-Bundle 'pulsation/vim-markdown'
+Bundle 'plasticboy/vim-markdown'
 " Bundle "tpope/vim-markdown"
 Bundle "matthias-guenther/hammer.vim"
 Bundle 'wookiehangover/jshint.vim'
@@ -74,6 +74,9 @@ Bundle "tpope/vim-surround.git"
 Bundle "greyblake/vim-preview.git"
 Bundle "groenewege/vim-less"
 Bundle 'flazz/vim-colorschemes'
+Bundle 'mattn/zencoding-vim'
+Bundle 'loremipsum'
+
 "
 " Deactivated bundles
 "
@@ -93,6 +96,7 @@ Bundle 'flazz/vim-colorschemes'
 " Bundle 'JavaScript-Indent'
 " Bundle 'Markdown'
 " Bundle 'suan/vim-instant-markdown'
+" Bundle 'plasticboy/vim-markdown'
 " Bundle 'sleistner/vim-jshint'
 
  filetype plugin indent on     " required!
@@ -119,7 +123,7 @@ let g:neocomplcache_enable_camel_case_completion = 1
 " Use underbar completion.
 let g:neocomplcache_enable_underbar_completion = 1
 " AutoComplPop like behavior.
-let g:neocomplcache_enable_auto_select = 1
+let g:neocomplcache_enable_auto_select = 0
 
 " Disable markdown folding
 let g:vim_markdown_folding_disabled=1 
@@ -133,5 +137,11 @@ let g:HAMMER_BROWSER='firefox'
 " colorscheme mirodark
 " colorscheme darkbone
 " colorscheme zenburn
-colorscheme Sunburst
+" colorscheme Sunburst
+colorscheme molokai
 
+" indent guides
+let g:indent_guides_start_level=2
+let g:indent_guides_guide_size=1
+let g:indent_guides_enable_on_vim_startup=1 "enable on startup
+" set list
