@@ -76,6 +76,7 @@ Bundle "groenewege/vim-less"
 Bundle 'flazz/vim-colorschemes'
 Bundle 'mattn/zencoding-vim'
 Bundle 'loremipsum'
+Bundle "terryma/vim-multiple-cursors"
 
 "
 " Deactivated bundles
