@@ -61,12 +61,12 @@ Bundle 'mutewinter/vim-indent-guides'
 Bundle 'pangloss/vim-javascript'
 Bundle 'Shougo/neocomplcache'
 Bundle 'plasticboy/vim-markdown'
-" Bundle "tpope/vim-markdown"
 Bundle "matthias-guenther/hammer.vim"
 Bundle 'wookiehangover/jshint.vim'
 Bundle 'int3/vim-taglist-plus'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
+Bundle "jistr/vim-nerdtree-tabs"
 Bundle 'djjcast/mirodark'
 Bundle 'Zenburn'
 Bundle 'sickill/vim-sunburst'
@@ -98,6 +98,7 @@ Bundle 'loremipsum'
 " Bundle 'suan/vim-instant-markdown'
 " Bundle 'plasticboy/vim-markdown'
 " Bundle 'sleistner/vim-jshint'
+" Bundle "tpope/vim-markdown"
 
  filetype plugin indent on     " required!
  "
@@ -144,4 +145,8 @@ colorscheme molokai
 let g:indent_guides_start_level=2
 let g:indent_guides_guide_size=1
 let g:indent_guides_enable_on_vim_startup=1 "enable on startup
+set spell
 " set list
+
+" Include local configuration
+source ~/.vimrc.local
