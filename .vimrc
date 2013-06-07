@@ -21,6 +21,8 @@ if has('gui_running')
 
   set gfn=Menlo\ Regular\:h18
 
+  cope
+
 endif
 
 " Auto indent
