@@ -1,29 +1,60 @@
-set ts=2
-set background=dark
-"highlight Normal     guifg=gray guibg=#000033
-"highlight Normal     guifg=gray guibg=#000011
-set ruler
-set incsearch
-set guioptions+=b
-let g:netrw_liststyle=3
-runtime ftplugin/man.vim
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'tpope/vim-fugitive'
+Plugin 'derekwyatt/vim-scala'
+Plugin 'Lokaltog/vim-easymotion'
+Plugin 'mutewinter/vim-indent-guides'
+Plugin 'pangloss/vim-javascript'
+Plugin 'Shougo/neocomplcache'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'matthias-guenther/hammer.vim'
+Plugin 'wookiehangover/jshint.vim'
+Plugin 'int3/vim-taglist-plus'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'djjcast/mirodark'
+Plugin 'Zenburn'
+Plugin 'sickill/vim-sunburst'
+Plugin 'tpope/vim-surround.git'
+Plugin 'greyblake/vim-preview.git'
+Plugin 'groenewege/vim-less'
+Plugin 'flazz/vim-colorschemes'
+Plugin 'mattn/emmet-vim'
+Plugin 'terryma/vim-multiple-cursors'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
 
 if has('gui_running')
-
-    " Get rid of toolbar
-    set guioptions+=T 
-    
-    " Display line numbers
-	set nu
-
-    " Do not wrap lines
-	set nowrap
-
-  set gfn=Menlo\ Regular\:h18
-
+  set nowrap
   cope
-
+  colorscheme molokai
 endif
+
+set nu
+set ts=2
+set background=dark
 
 " Auto indent
 set ai sw=2
@@ -43,112 +74,31 @@ set shiftwidth=2
 " Syntax highlighting
 syn on
 
-" vundle
-set nocompatible               " be iMproved
-filetype off                   " required!
-
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
-" let Vundle manage Vundle
-" required! 
-Bundle 'gmarik/vundle'
-
-"
-" Activated bundles
-"
-Bundle 'tpope/vim-fugitive'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'mutewinter/vim-indent-guides'
-Bundle 'pangloss/vim-javascript'
-Bundle 'Shougo/neocomplcache'
-Bundle 'plasticboy/vim-markdown'
-Bundle "matthias-guenther/hammer.vim"
-Bundle 'wookiehangover/jshint.vim'
-Bundle 'int3/vim-taglist-plus'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'scrooloose/nerdtree'
-Bundle "jistr/vim-nerdtree-tabs"
-Bundle 'djjcast/mirodark'
-Bundle 'Zenburn'
-Bundle 'sickill/vim-sunburst'
-Bundle "tpope/vim-surround.git"
-Bundle "greyblake/vim-preview.git"
-Bundle "groenewege/vim-less"
-Bundle 'flazz/vim-colorschemes'
-Bundle 'mattn/zencoding-vim'
-Bundle "terryma/vim-multiple-cursors"
-
-"
-" Deactivated bundles
-"
-" Bundle 'ManPageView'
-" Bundle 'Conque-Shell'
-" Bundle 'vcscommand.vim'
-" Bundle 'DrawIt'
-" Bundle 'smarty.vim'
-" Bundle 'joonty/vim-xdebug.git'
-" Bundle 'vexxor/phpdoc.vim'
-" Bundle 'phpcs.vim'
-" Bundle 'DirDiff.vim'
-" Bundle 'fholgado/minibufexpl.vim'
-" Bundle 'hallettj/jslint.vim'
-" Bundle 'Shougo/vimshell'
-" Bundle 'Shougo/vimproc'
-" Bundle 'JavaScript-Indent'
-" Bundle 'Markdown'
-" Bundle 'suan/vim-instant-markdown'
-" Bundle 'plasticboy/vim-markdown'
-" Bundle 'sleistner/vim-jshint'
-" Bundle "tpope/vim-markdown"
-
- filetype plugin indent on     " required!
- "
- " Brief help
- " :BundleList          - list configured bundles
- " :BundleInstall(!)    - install(update) bundles
- " :BundleSearch(!) foo - search(or refresh cache first) for foo
- " :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
- "
- " see :h vundle for more details or wiki for FAQ
- " NOTE: comments after Bundle command are not allowed..
-
 let g:indent_guides_enable_on_vim_startup = 0
 
- " Disable AutoComplPop.
+" Disable AutoComplPop.
 let g:acp_enableAtStartup = 0
+
 " Use neocomplcache.
 let g:neocomplcache_enable_at_startup = 1
+
 " Use smartcase.
 let g:neocomplcache_enable_smart_case = 1
+
 " Use camel case completion.
 let g:neocomplcache_enable_camel_case_completion = 1
+
 " Use underbar completion.
 let g:neocomplcache_enable_underbar_completion = 1
+
 " AutoComplPop like behavior.
 let g:neocomplcache_enable_auto_select = 0
 
 " Disable markdown folding
 let g:vim_markdown_folding_disabled=1 
 
-" Shortcut for Tagbar
-nmap <F8> :TlistToggle<CR> 
-
-let g:HAMMER_BROWSER='firefox'
-
-" colorscheme brookstream
-" colorscheme mirodark
-" colorscheme darkbone
-" colorscheme zenburn
-" colorscheme Sunburst
-colorscheme molokai
-
 " indent guides
 let g:indent_guides_start_level=2
 let g:indent_guides_guide_size=1
 let g:indent_guides_enable_on_vim_startup=1 "enable on startup
 set spell
-" set list
-
-" Include local configuration
-source ~/.vimrc.local

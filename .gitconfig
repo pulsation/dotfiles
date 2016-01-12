@@ -1,0 +1,29 @@
+# Ceci est le fichier de configuration personnel de Git.
+[pull]
+  # This is GREAT when you know what you're doing and are careful
+  # not to pull --no-rebase over a local line containing a true merge.
+  rebase = true
+  # WARNING! This option, which does away with the one gotcha of
+  # auto-rebasing on pulls, is only available from 1.8.5 onwards.
+  rebase = preserve
+[core]
+	autocrlf = true
+[push]
+	default = simple
+
+[color]
+	# Enable colors in color-supporting terminals
+	ui = auto
+[alias]
+	st = status -sb
+	ci = commit
+	lg = log --graph --date=relative --pretty=tformat:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%an %ad)%Creset'
+	lga = log --graph --date=relative --all --pretty=tformat:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%an %ad)%Creset'
+	lgr = log --graph --date=relative --remotes --pretty=tformat:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%an %ad)%Creset'
+  oops = commit --amend --no-edit
+	review-local = "!git lg @{push}.."
+	# Or pre 2.5, as we didn't differential push and upstream in shorthands:
+	# review-local = lg @{upstream}..
+[color "branch"]
+	# Blue on black is hard to read in git branch -vv: use cyan instead
+	upstream = cyan
